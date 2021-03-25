@@ -1,0 +1,50 @@
+@use '../abstracts/variables' as *;
+
+#grid {
+    background: $color-2;
+    display: grid;
+    grid-template-areas:
+        "h1             h1              h1"
+        "reset-button   reset-button    table"
+        "computer       computer        table"
+        "player         player          table";
+    justify-items: center;
+    align-items: center;
+    gap: 10px;
+    margin-top: 20px;
+    padding: 40px;
+    border-radius: 20px;
+}
+
+h1 {
+    grid-area: h1;
+}
+
+#reset-button {
+    grid-area: reset-button;
+    justify-self: start;
+}
+
+table {
+    grid-area: table;
+}
+
+#computer {
+    grid-area: computer;
+}
+
+#player {
+    grid-area: player;
+}
+
+@media (max-width: 520px) {
+    #grid {
+        grid-template-areas:
+            "h1             h1"
+            "reset-button   reset-button"
+            "computer       computer"
+            "player         player"
+            "table          table";
+        padding-bottom: 20px;
+    }
+}

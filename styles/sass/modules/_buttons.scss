@@ -1,0 +1,29 @@
+@use '../abstracts/variables' as *;
+
+button {
+    background: $button-color;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 80px;
+    height: 80px;
+    margin: 0 10px;
+    border: none;
+    box-shadow: 1px 1px 2px 2px #333;
+    img {
+        width: 50px;
+        height: auto;
+    }
+    &:hover {
+        box-shadow: 2px 2px 2px 2px #333;
+        cursor: pointer;
+    }
+}
+
+#reset-button {
+    color: $color-3;
+    width: 80px;
+    height: 40px;
+    font-size: 1.2rem;
+    font-weight: 500;
+}

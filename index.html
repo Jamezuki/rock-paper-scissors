@@ -6,14 +6,56 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" href="images/icon.png" type="image/png">
     <link rel="stylesheet" href="styles/master.css">
-    <title>Sass template</title>
+    <script src="scripts/script.js" defer></script>
+    <title>Rock Paper Scissors</title>
 </head>
 
 <body>
     <nav>
-        <a href="https://github.com/jamezuki/sass-template" target="_blank">GitHub</a>
+        <a href="https://github.com/jamezuki/rock-paper-scissors" target="_blank">GitHub</a>
     </nav>
-
+    <div id="grid">
+        <h1>Rock Paper Scissors</h1>
+        <button id="reset-button">Reset</button>
+        <div id="computer">
+            <h2>Computer</h2>
+            <img id="computer-img" src="images/question.png" alt="">
+        </div>
+        <div id="player">
+            <button id="rock-button"><img src="images/rock.png" alt="Rock"></button>
+            <button id="paper-button"><img src="images/paper.png" alt="Paper"></button>
+            <button id="scissors-button"><img src="images/scissors.png" alt="Scissors"></button>
+        </div>
+        <table>
+            <tr>
+                <th>Round</th>
+                <th>Result</th>
+            </tr>
+            <tr>
+                <td class="rounds"></td>
+                <td class="results"></td>
+            </tr>
+            <tr>
+                <td class="rounds"></td>
+                <td class="results"></td>
+            </tr>
+            <tr>
+                <td class="rounds"></td>
+                <td class="results"></td>
+            </tr>
+            <tr>
+                <td class="rounds"></td>
+                <td class="results"></td>
+            </tr>
+            <tr>
+                <td class="rounds"></td>
+                <td class="results"></td>
+            </tr>
+            <tr>
+                <td colspan="2" id="result"></td>
+            </tr>
+        </table>
+    </div>
 </body>
 
 </html>
